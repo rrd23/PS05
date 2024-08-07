@@ -7,7 +7,7 @@ class DivannewparsSpider(scrapy.Spider):
     start_urls = ["https://www.divan.ru/category/svetilniki/"]
 
     def parse(self, response):
-        divans = response.css('div._Ud0k')
+        divans = response.css('div._Ud0k U4KZV')
         for divan in divans:
             yield {
                 'name': divan.css('div.wYUX2 span::text').get(),
