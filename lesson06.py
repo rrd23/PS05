@@ -33,7 +33,7 @@ for vacancy in vacancies:
      # Находим названия компаний
         company = vacancy.find_element(By.CSS_SELECTOR, 'span.company-info-text--vgvZouLtf8jwBmaD1xgp').text
      # Находим зарплаты
-        salary = vacancy.find_element(By.CSS_SELECTOR, 'span.fake-magritte-primary-text--Hdw8FvkOzzOcoR4xXWni').text
+        salary = vacancy.find_element(By.CSS_SELECTOR, 'span.compensation-text--kTJ0_rp54B2vNeZ3CTt2').text
      # Находим ссылку с помощью атрибута 'href'
         link = vacancy.find_element(By.CSS_SELECTOR, 'a.bloko-link').get_attribute('href')
     except:
